@@ -1,6 +1,8 @@
-Верстка макета 'Landing_Britlex'.<br>
+# Верстка сайта по макету
 
-Сборка для версии node '14.x'.
+Макет 'Landing_Britlex'.
+
+Gulp сборка для версии [node '14.x'](https://nodejs.org/dist/latest-v14.x/).
 
 npm install<br>
 npm run start<br>
