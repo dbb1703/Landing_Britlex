@@ -1,4 +1,4 @@
-Верстка макета Landing_Britlex<br>
+Верстка макета 'Landing_Britlex'.<br>
 
 Сборка для версии node '14.x'.
 
