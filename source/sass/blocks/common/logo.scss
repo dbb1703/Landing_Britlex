@@ -1,0 +1,9 @@
+.logo__img {
+  width: 71px;
+  height: 36px;
+
+  @media (min-width: $mobile-width-2) {
+    width: 89px;
+    height: 45px;
+  }
+}

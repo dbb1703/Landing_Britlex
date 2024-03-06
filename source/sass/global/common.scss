@@ -1,5 +1,8 @@
 body {
-
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: $main-text;
+  margin: 0;
 }
 
 a,
@@ -24,4 +27,17 @@ img {
 
 picture {
   display: flex;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin: 0;
 }

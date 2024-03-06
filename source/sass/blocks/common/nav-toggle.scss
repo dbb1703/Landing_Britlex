@@ -1,0 +1,26 @@
+.nav-toggle {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-toggle__line {
+  display: block;
+  width: 33px;
+  height: 3px;
+  background-color: #39515E;
+  border-radius: 1px;
+  margin-bottom: 4px;
+}
+
+.nav-toggle__line--accent {
+  width: 24px;
+}
+
+.nav-toggle__text {
+  display: none;
+}

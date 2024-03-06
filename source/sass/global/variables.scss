@@ -1,22 +1,14 @@
-// Fonts
-$open: "OpenSans-Regular", sans-serif;
-$open-light: "OpenSans-Light", sans-serif;
-$open-bold: "OpenSans-Bold", sans-serif;
-
 // Colors text
-$main-text: #283645;
-$light-text: #ffffff;
-$accent-text: #d22856;
-$border-grey: #e5e5e5;
+$main-text: #8F95A5;
+$accent-text: #263238;
 
 // Colors background
-$secondary-background: #283645;
-$tertiary-background: #1d2631;
-$background-grey: #f2f2f2;
-$button-background: #2aab6d;
+$secondary-background: #F5F5F5;
+$accent-background: #263238;
 
 // Viewports
-$mobile-width-only: 320px;
-$tablet-width: 660px;
-$desktop-width: 1200px;
-$max-width: 1440px;
+$mobile-width: 320px;
+$mobile-width-2: 575px;
+$tablet-width: 767px;
+$desktop-width: 992px;
+$max-width: 1600px;
