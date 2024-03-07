@@ -28,7 +28,7 @@
       <li class="main-menu__item">Contacts</li>
     </ul>
     <a href="#"
-       class="header__talk-link">Let's Talk</a>
+       class="btn header__talk-link">Let's Talk</a>
     <button class="header__nav-toggle nav-toggle"
             type="button">
       <span class="nav-toggle__line"></span>
@@ -39,6 +39,54 @@
   </nav>
   <div class="header__wrapper">
     <picture class="header__pic">
+      <source
+        type="image/webp"
+        media="(min-width: 992px)"
+        srcset="
+                 img/index/header-img-desktop@1x.webp 1x,
+                img/index/header-img-desktop@2x.webp 2x
+              "
+      />
+      <source
+        type="image/jpeg"
+        media="(min-width: 992px)"
+        srcset="
+                 img/index/header-img-desktop@1x.png 1x,
+                img/index/header-img-desktop@2x.png 2x
+              "
+      />
+      <source
+        type="image/webp"
+        media="(min-width: 767px)"
+        srcset="
+                 img/index/header-img-tablet@1x.webp 1x,
+                img/index/header-img-tablet@2x.webp 2x
+              "
+      />
+      <source
+        type="image/jpeg"
+        media="(min-width: 767px)"
+        srcset="
+                 img/index/header-img-tablet@1x.png 1x,
+                img/index/header-img-tablet@2x.png 2x
+              "
+      />
+      <source
+        type="image/webp"
+        media="(min-width: 575px)"
+        srcset="
+                 img/index/header-img-mobile2@1x.webp 1x,
+                img/index/header-img-mobile2@2x.webp 2x
+              "
+      />
+      <source
+        type="image/jpeg"
+        media="(min-width: 575px)"
+        srcset="
+                 img/index/header-img-mobile2@1x.png 1x,
+                img/index/header-img-mobile2@2x.png 2x
+              "
+      />
       <source type="image/webp"
               media="(min-width: 320px)"
               srcset="
@@ -50,12 +98,12 @@
            alt="Learning languages">
     </picture>
     <div class="header__content">
-      <h1 class="header__title">Learn Any<br> Foreign Language</h1>
+      <h1 class="header__title">Learn Any&nbsp;<br> Foreign Language</h1>
       <p class="header__text">With our teachers who write a program
         for each student, you will be able to make
         your first sketch after the first lesson.</p>
+      <button class="btn header__btn" type="button">Get started</button>
     </div>
-    <button class="btn header__btn" type="button">Get started</button>
   </div>
 </header>
 

@@ -6,6 +6,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -8px;
+    left: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .nav-toggle__line {
@@ -15,10 +25,32 @@
   background-color: #39515E;
   border-radius: 1px;
   margin-bottom: 4px;
+
+  @media (min-width: $mobile-width-2) {
+    width: 42px;
+    height: 4px;
+    margin-top: 1px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 3px;
+    margin-bottom: 4px;
+    margin-top: 0;
+  }
 }
 
 .nav-toggle__line--accent {
   width: 24px;
+
+  @media (min-width: $mobile-width-2) {
+    width: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 21px;
+  }
 }
 
 .nav-toggle__text {

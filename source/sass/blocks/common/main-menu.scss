@@ -1,0 +1,27 @@
+.main-menu__item {
+  display: inline-block;
+  font-size: 16px;
+  color: #263238;
+  font-weight: 500;
+  position: relative;
+
+  &:nth-child(1) {
+    right: 25px;
+  }
+
+  &:nth-child(2) {
+    left: 4px;
+  }
+
+  &:nth-child(3) {
+    left: 28px;
+  }
+
+  &:nth-child(4) {
+    left: 74px;
+  }
+
+  &:nth-child(5) {
+    left: 99px;
+  }
+}

@@ -35,9 +35,28 @@ h1 {
   font-weight: 600;
   color: #000;
   text-align: center;
+
+  @media (min-width: $mobile-width-2) {
+    font-size: 34px;
+    line-height: 45px;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 48px;
+    line-height: 64px;
+  }
 }
 
 p {
   text-align: center;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }

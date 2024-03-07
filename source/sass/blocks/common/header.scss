@@ -1,37 +1,189 @@
+.header {
+  position: relative;
+}
+
 .header__nav {
   margin: 35px 10px 24px 15px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $mobile-width-2) {
+    margin: 38px 44px 6px 33px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 38px 44px 64px 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 29px 44px 78px 31px;
+    align-items: center;
+    position: relative;
+  }
 }
 
 .header__menu {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 3px 0 0 5px;
+    padding: 0;
+    list-style: none;
+    position: relative;
+  }
 }
 
 .header__talk-link {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 160px;
+    height: 50px;
+    border: 2px solid $accent-background;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: relative;
+    left: 13px;
+    bottom: 4px;
+
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .header__wrapper {
   margin: 0 10px 0 11px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 16px 0 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 21px 0 29px;
+  }
 }
 
 .header__pic {
   margin-bottom: 16px;
+
+  @media (min-width: $mobile-width-2) {
+    justify-content: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    align-items: center;
+    margin-top: -29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -15px;
+  }
+}
+
+.header__content {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .header__title {
   max-width: 220px;
   margin: 0 auto 20px;
+
+  @media (min-width: $mobile-width-2) {
+    max-width: none;
+    margin-bottom: 26px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 217px;
+    margin: 0 0 25px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: -61px;
+      bottom: 7px;
+      width: 52px;
+      height: 52px;
+      background: url("../img/index/light-bulb-mobile.svg");
+      transform: rotate(39deg);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:after {
+      height: 60px;
+      width: 60px;
+      background: url("../img/index/light-bulb-desktop.svg");
+      right: -156px;
+      bottom: 33px;
+    }
+  }
 }
 
 .header__text {
   margin-bottom: 35px;
   max-width: 296px;
+
+  @media (min-width: $mobile-width-2) {
+    max-width: 490px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 335px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    max-width: 420px;
+    margin-left: 4px;
+    margin-bottom: 33px;
+  }
 }
 
 .header__btn {
   width: 289px;
   height: 60px;
   margin-left: 5px;
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: $mobile-width-2) {
+    display: block;
+    width: 305px;
+    height: 75px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 236px;
+    height: 65px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 292px;
+    height: 80px;
+    font-size: 24px;
+  }
+
 }
