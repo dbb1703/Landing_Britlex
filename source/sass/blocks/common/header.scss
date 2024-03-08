@@ -70,7 +70,7 @@
 }
 
 .header__wrapper {
-  margin: 0 10px 0 11px;
+  margin: 0 10px 51px 11px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -171,6 +171,7 @@
 .header__text {
   margin-bottom: 35px;
   max-width: 296px;
+  text-align: center;
 
   @media (min-width: $mobile-width-2) {
     max-width: 490px;
@@ -182,6 +183,7 @@
   @media (min-width: $tablet-width) {
     max-width: 335px;
     margin-bottom: 28px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
