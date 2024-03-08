@@ -20,6 +20,10 @@
     align-items: center;
     position: relative;
   }
+
+  @media (min-width: $max-width) {
+    margin: 52px 131px 102px 130px;
+  }
 }
 
 .header__menu {
@@ -54,6 +58,15 @@
     font-size: 18px;
     line-height: 18px;
   }
+
+  @media (min-width: $max-width) {
+    width: 220px;
+    height: 70px;
+    left: 0;
+    bottom: -3px;
+
+    font-size: 24px;
+  }
 }
 
 .header__wrapper {
@@ -67,6 +80,10 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 21px 0 29px;
+  }
+
+  @media (min-width: $max-width) {
+    margin: 0 124px 103px 129px;
   }
 }
 
@@ -85,6 +102,10 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -15px;
+  }
+
+  @media (min-width: $max-width) {
+    margin-top: -48px;
   }
 }
 
@@ -133,6 +154,18 @@
       bottom: 33px;
     }
   }
+
+  @media (min-width: $max-width) {
+    margin-bottom: 41px;
+
+    &:after {
+      width: 85px;
+      height: 85px;
+      background: url("../img/index/light-bulb-desktop2.svg");
+      right: -310px;
+      bottom: 44px;
+    }
+  }
 }
 
 .header__text {
@@ -148,7 +181,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 335px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -156,6 +189,13 @@
     max-width: 420px;
     margin-left: 4px;
     margin-bottom: 33px;
+  }
+
+  @media (min-width: $max-width) {
+    font-size: 24px;
+    max-width: 560px;
+    margin-left: 0;
+    margin-bottom: 65px;
   }
 }
 
@@ -178,12 +218,21 @@
     width: 236px;
     height: 65px;
     margin: 0;
+    font-weight: 400;
   }
 
   @media (min-width: $desktop-width) {
     width: 292px;
     height: 80px;
     font-size: 24px;
+  }
+
+  @media (min-width: $max-width) {
+    width: 438px;
+    height: 118px;
+    border-radius: 15px;
+
+    font-size: 36px;
   }
 
 }

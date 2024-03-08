@@ -6,4 +6,9 @@
     width: 89px;
     height: 45px;
   }
+
+  @media (min-width: $max-width) {
+    width: 106px;
+    height: 54px;
+  }
 }

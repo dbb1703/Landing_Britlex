@@ -1,9 +1,9 @@
 .main-menu__item {
   display: inline-block;
+  position: relative;
   font-size: 16px;
   color: #263238;
   font-weight: 500;
-  position: relative;
 
   &:nth-child(1) {
     right: 25px;
@@ -23,5 +23,30 @@
 
   &:nth-child(5) {
     left: 99px;
+  }
+
+  @media (min-width: $max-width) {
+    font-size: 20px;
+    top: -3px;
+
+    &:nth-child(1) {
+      right: 76px;
+    }
+
+    &:nth-child(2) {
+      left: -40px;
+    }
+
+    &:nth-child(3) {
+      left: -8px;
+    }
+
+    &:nth-child(4) {
+      left: 48px;
+    }
+
+    &:nth-child(5) {
+      left: 80px;
+    }
   }
 }
