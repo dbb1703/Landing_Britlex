@@ -72,6 +72,10 @@
 .header__wrapper {
   margin: 0 10px 51px 11px;
 
+  @media (min-width: $mobile-width-2) {
+    margin-bottom: 98px;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
