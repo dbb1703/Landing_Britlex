@@ -5,10 +5,18 @@
   @media (min-width: $mobile-width-2) {
     max-width: 510px;
   }
+
+  @media (min-width: $tablet-width) {
+    min-width: 700px;
+  }
 }
 
 .skills__title {
   margin: 0 0 32px 12px;
+
+  @media (min-width: $tablet-width) {
+    margin: 46px auto 32px;
+  }
 }
 
 .skills__items {
@@ -20,6 +28,14 @@
     column-gap: 30px;
     row-gap: 33px;
   }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+                        "speaking writing reading"
+                        "speaking listening listening";
+    gap: 10px;
+  }
 }
 
 .skills__item {
@@ -27,39 +43,6 @@
   padding-bottom: 45px;
   background-color: $secondary-background;
   border-radius: 5px;
-
-  &:nth-child(2) {
-    padding-top: 16px;
-
-    .skills__text {
-      font-size: 12px;
-    }
-  }
-
-  &:nth-child(3) {
-    padding-top: 29px;
-
-    .skills__pic {
-      margin-bottom: 45px;
-    }
-  }
-
-  &:nth-child(4) {
-    padding-top: 32px;
-    padding-bottom: 57px;
-
-    .skills__pic {
-      margin-bottom: 45px;
-    }
-
-    .skills__subtitle {
-      padding-left: 17px;
-    }
-
-    .skills__text {
-      margin-bottom: 37px;
-    }
-  }
 
   @media (min-width: $mobile-width-2) {
     height: 534px;
@@ -71,59 +54,131 @@
     .skills__pic {
       position: relative;
     }
+  }
 
-    &:nth-child(1) {
-      .skills__pic {
-        left: -18px;
-        top: -16px;
-      }
+  @media (min-width: $tablet-width) {
+    height: auto;
+  }
+}
 
-      .skills__text {
-        font-size: 12px;
-        padding-right: 40px;
-      }
+.skills__item--speaking {
+  @media (min-width: $mobile-width-2) {
+    .skills__pic {
+      left: -18px;
+      top: -16px;
     }
 
-    &:nth-child(2) {
-      .skills__pic {
-        left: -5px;
-        top: -10px;
-      }
+    .skills__text {
+      font-size: 12px;
+      padding-right: 40px;
+    }
+  }
 
-      .skills__subtitle {
-        margin-left: 7px;
-        margin-bottom: 5px;
-      }
+  @media (min-width: $tablet-width) {
+    grid-area: speaking;
 
-      .skills__text {
-        font-size: 12px;
-        margin-left: 6px;
-      }
+    padding-top: 50px;
+
+    .skills__pic {
+      left: 0;
+      margin-bottom: 15px;
     }
 
-    &:nth-child(3) {
-      padding-bottom: 34px;
+    .skills__text {
+      font-size: 13px;
+      padding: 0 22px;
+      margin-top: 3px;
+    }
+  }
+}
 
-      .skills__pic {
-        left: -23px;
-        top: 3px;
-        margin-bottom: 33px;
-      }
+.skills__item--writing {
+  padding-top: 16px;
+
+  .skills__text {
+    font-size: 12px;
+  }
+
+  @media (min-width: $mobile-width-2) {
+    .skills__pic {
+      left: -5px;
+      top: -10px;
     }
 
-    &:nth-child(4) {
-      padding-bottom: 35px;
-
-      .skills__pic {
-        left: -3px;
-        top: 8px;
-        margin-bottom: 30px;
-      }
-
-      .skills__text {
-        margin-left: 8px;
-      }
+    .skills__subtitle {
+      margin-left: 7px;
+      margin-bottom: 5px;
     }
+
+    .skills__text {
+      font-size: 12px;
+      margin-left: 6px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: writing;
+  }
+}
+
+.skills__item--reading {
+  padding-top: 29px;
+
+  .skills__pic {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $mobile-width-2) {
+    padding-bottom: 34px;
+
+    .skills__pic {
+      left: -23px;
+      top: 3px;
+      margin-bottom: 33px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: reading;
+  }
+}
+
+.skills__item--listening {
+  padding-top: 32px;
+  padding-bottom: 57px;
+
+  .skills__pic {
+    margin-bottom: 45px;
+  }
+
+  .skills__subtitle {
+    padding-left: 17px;
+  }
+
+  .skills__text {
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $mobile-width-2) {
+    padding-bottom: 35px;
+
+    .skills__pic {
+      left: -3px;
+      top: 8px;
+      margin-bottom: 30px;
+    }
+
+    .skills__text {
+      margin-left: 8px;
+    }
+
+    .skills__btn {
+      margin-left: 17px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: listening;
   }
 }
 
@@ -136,12 +191,24 @@
   }
 }
 
+.skills__content {
+  @media (min-width: $mobile-width-2) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
 .skills__subtitle {
   padding-left: 13px;
   margin: 0 0 9px;
 
   @media (min-width: $mobile-width-2) {
     margin: -3px 0 9px 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 8px;
   }
 }
 
