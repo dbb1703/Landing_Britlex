@@ -67,6 +67,10 @@ h2 {
   @media (min-width: $mobile-width-2) {
     font-size: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+  }
 }
 
 h3 {
@@ -77,6 +81,10 @@ h3 {
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
   }
 }
 

@@ -9,6 +9,10 @@
   @media (min-width: $tablet-width) {
     min-width: 700px;
   }
+
+  @media (min-width: $tablet-width) {
+    min-width: 934px;
+  }
 }
 
 .skills__title {
@@ -16,6 +20,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 46px auto 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 31px;
+    margin-bottom: 52px;
   }
 }
 
@@ -35,6 +44,10 @@
                         "speaking writing reading"
                         "speaking listening listening";
     gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 12px;
   }
 }
 
@@ -95,6 +108,26 @@
       margin-left: 23px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
+
+    .skills__pic {
+      top: -4px;
+      left: 3px;
+    }
+
+    .skills__text {
+      font-size: 14px;
+      margin-top: 16px;
+      padding: 0 30px 0 30px;
+    }
+
+    .skills__btn {
+      margin-top: 46px;
+      margin-left: 30px;
+    }
+  }
 }
 
 .skills__item--writing {
@@ -138,6 +171,30 @@
       margin-top: 28px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .skills__pic {
+      top: -10px;
+      left: 42px;
+    }
+
+    .skills__subtitle {
+      margin-top: -12px;
+      margin-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    .skills__text {
+      font-size: 14px;
+      margin-left: 2px;
+      padding-right: 20px;
+    }
+
+    .skills__btn {
+      margin-top: 22px;
+      margin-left: 32px;
+    }
+  }
 }
 
 .skills__item--reading {
@@ -177,6 +234,27 @@
     .skills__btn {
       margin-top: 22px;
       margin-left: 22px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .skills__pic {
+      left: -25px;
+      top: -13px;
+    }
+
+    .skills__subtitle {
+      margin-top: -16px;
+      margin-left: 15px;
+      margin-bottom: 10px;
+    }
+
+    .skills__text {
+      margin-left: -2px;
+    }
+
+    .skills__btn {
+      margin-left: 28px;
     }
   }
 }
@@ -243,6 +321,34 @@
       margin-left: 23px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+
+    .skills__pic {
+      top: 13px;
+      left: -17px;
+    }
+
+    .skills__content {
+      max-width: 340px;
+    }
+
+    .skills__subtitle {
+      margin-top: 10px;
+      margin-left: 15px;
+      margin-bottom: 12px;
+    }
+
+    .skills__text {
+      margin-left: 6px;
+      margin-bottom: 16px;
+    }
+
+    .skills__btn {
+      margin-left: 32px;
+    }
+  }
 }
 
 .skills__pic {
@@ -273,6 +379,10 @@
   @media (min-width: $tablet-width) {
     margin-left: 8px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 8px 0 0 18px;
+  }
 }
 
 .skills__text {
@@ -283,6 +393,11 @@
   @media (min-width: $mobile-width-2) {
     padding: 0 15px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    padding: 0 30px 0;
   }
 }
 
