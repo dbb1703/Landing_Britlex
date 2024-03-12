@@ -7,11 +7,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 700px;
+    max-width: 700px;
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 934px;
+    max-width: 934px;
   }
 }
 
