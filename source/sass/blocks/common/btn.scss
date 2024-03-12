@@ -17,4 +17,9 @@
   @media (min-width: $mobile-width-2) {
     width: 200px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 178px;
+    font-size: 16px;
+  }
 }
