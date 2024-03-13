@@ -1,0 +1,36 @@
+.metrics__list {
+  text-align: center;
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 51px;
+
+  &:nth-child(2) {
+    margin-bottom: 44px;
+
+    .metrics__num {
+      margin-bottom: 4px;
+    }
+  }
+
+  &:nth-child(3) {
+    .metrics__num {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.metrics__num {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2A3246;
+
+  margin-bottom: 7px;
+}
+
+.metrics__name {
+  font-size: 13px;
+}
+
+.metrics__name--accent {
+  font-size: 14px;
+}
