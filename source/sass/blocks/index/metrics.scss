@@ -29,6 +29,10 @@
 
 .metrics__name {
   font-size: 13px;
+
+  @media (min-width: $mobile-width-2) {
+    font-size: 14px;
+  }
 }
 
 .metrics__name--accent {
