@@ -14,6 +14,12 @@
     grid-template-areas: "title pic"
                           "content pic";
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 934px;
+
+    grid-template-columns: 520px 1fr;
+  }
 }
 
 .about__title {
@@ -29,6 +35,10 @@
     margin-bottom: -2px;
 
     grid-area: title;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
   }
 }
 
@@ -51,6 +61,13 @@
     top: 35px;
     left: 54px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 336px;
+    height: 336px;
+    top: 0;
+    left: 79px;
+  }
 }
 
 .about__text {
@@ -69,6 +86,13 @@
     margin-left: 2px;
     margin-bottom: 27px;
     max-width: 320px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 100%;
+    margin-bottom: 30px;
   }
 }
 
@@ -141,6 +165,32 @@
         margin-top: 0;
         margin-bottom: 5px;
         margin-left: -3px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .metrics__list:nth-child(1) {
+      .metrics__name {
+        margin-left: 0;
+      }
+    }
+
+    .metrics__list:nth-child(2) {
+      margin-top: -5px;
+      margin-left: 58px;
+
+      .metrics__num {
+        margin-bottom: 9px;
+      }
+    }
+
+    .metrics__list:nth-child(3) {
+      margin-top: -8px;
+      margin-left: 44px;
+
+      .metrics__name {
+        margin-left: 10px;
       }
     }
   }
