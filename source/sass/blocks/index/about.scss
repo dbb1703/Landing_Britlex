@@ -220,7 +220,7 @@
     }
   }
 
-  @media (max-width: $max-width) {
+  @media (min-width: $max-width) {
     .metrics__list:nth-child(1) {
       margin-left: -4px;
     }
