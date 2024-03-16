@@ -8,6 +8,10 @@
   @media (min-width: $mobile-width-2) {
     max-width: 430px;
   }
+
+  @media (min-width: $tablet-width) {
+    max-width: 736px;
+  }
 }
 
 .pricing__title {
@@ -15,6 +19,17 @@
 
   @media (min-width: $mobile-width-2) {
     margin-bottom: 53px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+  }
+}
+
+.pricing__items {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -35,6 +50,26 @@
 
       .pricing__subtitle {
         margin-left: 0;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+
+      .pricing__pic {
+        margin-top: 13px;
+        margin-left: -29px;
+        margin-bottom: 23px;
+      }
+
+      .pricing__subtitle {
+        margin-left: 1px;
+        margin-bottom: 15px;
+      }
+
+      .pricing__text {
+        margin-left: 2px;
+        margin-bottom: 0;
       }
     }
   }
@@ -92,6 +127,35 @@
       .pricing__month {
         left: 6px;
         top: 2px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      .pricing__pic {
+        margin-top: 43px;
+        margin-left: -7px;
+        margin-bottom: 22px;
+        width: 219px;
+        height: 168px;
+      }
+
+      .pricing__subtitle {
+        max-width: 112px;
+        margin-left: 7px;
+        margin-bottom: 15px;
+      }
+
+      .pricing__text {
+        margin-left: 7px;
+      }
+
+      .pricing__value {
+        top: 0;
+        left: -1px;
+      }
+
+      .pricing__num {
+        margin-left: -12px;
       }
     }
   }
@@ -153,11 +217,41 @@
         left: 9px;
       }
     }
+
+    @media (min-width: $tablet-width) {
+      .pricing__pic {
+        margin-top: 8px;
+        margin-left: -8px;
+      }
+
+      .pricing__subtitle {
+        max-width: 100px;
+        margin-left: -6px;
+        margin-bottom: 9px;
+      }
+
+      .pricing__text {
+        margin-left: -7px;
+      }
+
+      .pricing__num {
+        top: 0;
+        left: 10px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 205px;
+    height: 456px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .pricing__pic {
   justify-content: center;
+  align-items: center;
   margin-bottom: 28px;
 }
 
@@ -168,6 +262,12 @@
     font-size: 24px;
     margin-bottom: 24px;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 15px;
+  }
 }
 
 .pricing__text {
@@ -177,6 +277,11 @@
   @media (min-width: $mobile-width-2) {
     font-size: 14px;
     margin-bottom: 31px;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-bottom: 15px;
   }
 }
 
@@ -196,6 +301,11 @@
     width: 205px;
     height: 45px;
     left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+    left: 3px;
   }
 }
 
