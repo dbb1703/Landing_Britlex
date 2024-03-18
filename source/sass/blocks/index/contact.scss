@@ -7,6 +7,18 @@
   @media (min-width: $mobile-width-2) {
     max-width: 575px;
   }
+
+  @media (min-width: $tablet-width) {
+    max-width: 740px;
+    display: grid;
+    grid-template-columns: 233px 1fr;
+    grid-template-rows: 50px 89px 1fr;
+    grid-template-areas: "picture title"
+                         "picture text"
+                         "picture form";
+    column-gap: 48px;
+    padding: 0;
+  }
 }
 
 .contact__title {
@@ -14,6 +26,13 @@
 
   @media (min-width: $mobile-width-2) {
     margin-bottom: 82px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: title;
+    line-height: 40px;
+    text-align: left;
+    margin-bottom: -1px;
   }
 }
 
@@ -25,6 +44,14 @@
   @media (min-width: $mobile-width-2) {
     margin-left: 12px;
     margin-bottom: 34px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: picture;
+    width: 233px;
+    height: 210px;
+    margin-left: 12px;
+    margin-top: 8px;
   }
 }
 
@@ -42,6 +69,15 @@
       display: none;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    grid-area: text;
+    text-align: left;
+    font-size: 14px;
+    padding: 0 50px 0 0;
+    margin-left: 2px;
+    margin-bottom: 0;
+  }
 }
 
 .contact__form {
@@ -53,6 +89,13 @@
     position: relative;
     max-width: 512px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: form;
+    margin-left: 0;
+
+    max-width: none;
   }
 }
 
@@ -86,6 +129,17 @@
 
     font-size: 13px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 283px;
+    height: 50px;
+    margin-right: 6px;
+    border-radius: 5px;
+    border-right: 1px solid $main-text;
+    padding: 0 21px;
+
+    font-size: 12px;
+  }
 }
 
 .contact__btn {
@@ -100,5 +154,14 @@
     z-index: 10;
 
     font-size: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 50px;
+    border-radius: 5px;
+    position: relative;
+
+    font-size: 13px;
   }
 }

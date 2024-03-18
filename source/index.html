@@ -859,6 +859,22 @@
     <picture class="contact__pic">
       <source
         type="image/webp"
+        media="(min-width: 767px)"
+        srcset="
+                 img/index/contact/contact-tablet@1x.webp 1x,
+                img/index/contact/contact-tablet@2x.webp 2x
+              "
+      />
+      <source
+        type="image/jpeg"
+        media="(min-width: 767px)"
+        srcset="
+                 img/index/contact/contact-tablet@1x.png 1x,
+                img/index/contact/contact-tablet@2x.png 2x
+              "
+      />
+      <source
+        type="image/webp"
         media="(min-width: 575px)"
         srcset="
                  img/index/contact/contact-mobile2@1x.webp 1x,
@@ -889,8 +905,12 @@
       and free resource</p>
     <form action="#"
           class="contact__form">
-      <input class="contact__input" type="text" placeholder="Enter Your E-mail">
-      <button class="btn contact__btn" type="submit">Subscribe</button>
+      <input class="contact__input"
+             type="text"
+             placeholder="Enter Your E-mail">
+      <button class="btn contact__btn"
+              type="submit">Subscribe
+      </button>
     </form>
   </div>
 </section>
