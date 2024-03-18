@@ -1,0 +1,46 @@
+.contact__wrapper {
+  margin: 0 15px 20px;
+}
+
+.contact__title {
+  margin: 0 0 38px;
+}
+
+.contact__pic {
+  justify-content: center;
+  margin-left: 21px;
+  margin-bottom: 38px;
+}
+
+.contact__text {
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__input {
+  box-sizing: border-box;
+  width: 291px;
+  height: 50px;
+  border: 1px solid $main-text;
+  border-radius: 5px;
+  margin-bottom: 17px;
+  padding: 0 25px;
+
+  font-size: 12px;
+  color: $main-text;
+
+  &::placeholder {
+    color: $main-text;
+    letter-spacing: 0.5px;
+  }
+}
+
+.contact__btn {
+  width: 290px;
+  height: 60px;
+}
