@@ -1,0 +1,58 @@
+.footer__wrapper {
+  max-width: 290px;
+  margin: 0 auto 46px;
+  border-top: 1px solid #c4c4c4;
+}
+
+.footer__logo {
+  display: flex;
+  margin: 25px 0 16px;
+}
+
+.footer__img {
+  margin: 0 auto;
+  width: 71px;
+  height: 36px;
+}
+
+.footer__list {
+  color: $main-text;
+  font-size: 11px;
+  font-weight: 500;
+  margin-right: -15px;
+  padding-left: 0;
+  list-style: none;
+
+  display: flex;
+
+  li:first-child {
+    margin-left: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.footer__list-item {
+  margin-left: 6px;
+
+  &:before {
+    content: "\2022";
+    position: relative;
+    right: 3px;
+  }
+}
+
+.footer__link {
+  color: $main-text;
+  transition: 0.3s color;
+
+  &:visited {
+    color: $main-text;
+  }
+
+  &:hover {
+    color: #000000;
+  }
+}
