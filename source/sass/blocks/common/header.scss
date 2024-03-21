@@ -3,26 +3,31 @@
 }
 
 .header__nav {
-  margin: 35px 10px 24px 15px;
+  padding-top: 35px;
+  margin: 0 10px 24px 15px;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: $mobile-width-2) {
-    margin: 38px 44px 6px 33px;
+    padding-top: 38px;
+    margin: 0 44px 6px 33px;
   }
 
   @media (min-width: $tablet-width) {
-    margin: 38px 44px 64px 39px;
+    padding-top: 38px;
+    margin: 0 44px 64px 39px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 29px 44px 78px 31px;
+    padding-top: 29px;
+    margin: 0 44px 78px 31px;
     align-items: center;
     position: relative;
   }
 
   @media (min-width: $max-width) {
-    margin: 52px 131px 102px 130px;
+    padding-top: 52px;
+    margin: 0 131px 102px 130px;
   }
 }
 
