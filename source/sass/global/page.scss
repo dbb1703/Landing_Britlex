@@ -27,4 +27,27 @@
   z-index: 100;
   width: 100%;
   background-color: #fff;
+
+  @media (min-width: $tablet-width) {
+    background-color: unset;
+  }
+}
+
+.page__modal-left {
+  @media (min-width: $tablet-width) {
+    width: 56%;
+    display: flex;
+    justify-content: flex-end;
+
+    background-color: #fff;
+  }
+}
+
+.page__modal-right {
+  @media (min-width: $tablet-width) {
+    width: 44%;
+    height: 100vh;
+
+    background: rgba(7, 34, 47, 0.7);
+  }
 }

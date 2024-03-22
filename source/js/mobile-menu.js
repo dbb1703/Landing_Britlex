@@ -9,3 +9,7 @@ menuToggle(menuClosed, mobileMenu);
 // Плавный scroll в мобильном меню
 let mobileLinks = document.querySelectorAll('.mobile-menu__link');
 menuScroll(mobileLinks, mobileMenu);
+
+// Закрытие меню при клике на прозрачную часть окна
+let modalRight = document.querySelector('.page__modal-right');
+menuToggle(modalRight, mobileMenu);

@@ -1,5 +1,10 @@
 .mobile-menu--opened {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .mobile-menu__wrapper {
@@ -11,6 +16,13 @@
   @media (min-width: $mobile-width-2) {
     max-width: 510px;
     padding-top: 47px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: unset;
+    padding-top: 38px;
+    width: 364px;
+    margin: 0 27px;
   }
 }
 
@@ -24,6 +36,11 @@
   @media (min-width: $mobile-width-2) {
     padding-bottom: 39px;
     margin-bottom: 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 16px;
+    margin-bottom: 49px;
   }
 }
 
@@ -73,6 +90,11 @@
       width: 26px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    top: 2px;
+    left: 4px;
+  }
 }
 
 .mobile-menu__list {
@@ -90,6 +112,12 @@
 
     font-size: 24px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+
+    font-size: 22px;
+  }
 }
 
 .mobile-menu__item {
@@ -97,6 +125,10 @@
 
   @media (min-width: $mobile-width-2) {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
   }
 }
 
@@ -121,5 +153,12 @@
 
     font-weight: 400;
     font-size: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 210px;
+    height: 60px;
+
+    font-size: 18px;
   }
 }
