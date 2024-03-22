@@ -3,8 +3,8 @@ let menuOpened = document.querySelector('.nav-toggle');
 let menuClosed = document.querySelector('.mobile-menu__close');
 let mobileMenu = document.querySelector('.mobile-menu');
 
-menuToggle(mobileMenu, menuOpened);
-menuToggle(mobileMenu, menuClosed);
+menuToggle(menuOpened, mobileMenu);
+menuToggle(menuClosed, mobileMenu);
 
 // Плавный scroll в мобильном меню
 let mobileLinks = document.querySelectorAll('.mobile-menu__link');

@@ -1,4 +1,4 @@
-function menuToggle(menu, elem) {
+function menuToggle(elem, menu) {
   elem.addEventListener('click', function (e) {
     e.preventDefault();
     menu.classList.toggle('mobile-menu--opened');
