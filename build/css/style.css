@@ -608,7 +608,11 @@ p {
   max-width: 290px;
   padding-top: 32px;
   margin: 0 auto;
-  height: 100vh; }
+  max-height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 20px;
+  box-sizing: border-box; }
   @media (min-width: 575px) {
     .mobile-menu__wrapper {
       max-width: 510px;
